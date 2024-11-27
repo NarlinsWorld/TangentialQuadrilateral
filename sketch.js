@@ -3,18 +3,11 @@ var Q = [];
 function setup() {
   createCanvas(400, 400);
   //get a convex polygon
-  let convex = false;
-  while(!convex){ //create a random convex quadrilateral
-    makeFirstQuad();
+  
+    makeTwoOppositeCorners()();
     //debug data
     // Q[0] = [122,65];
-    // Q[1] = [358,12];
-    // Q[2] = [200,396];
-    // Q[3] = [100,391];
-    convex = is_convex_polygon(Q);
-  } //end creation of a convex quadrilateral
-
-
+    // Q[1] = [200,396];
 
   let A = Q[0], B=Q[1], D=Q[3]; //the 1st 3 points
   let F = Q[2]; //this point will change.

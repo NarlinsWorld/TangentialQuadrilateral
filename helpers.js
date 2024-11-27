@@ -3,20 +3,16 @@ function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function makeFirstQuad() {
+function makeTwoOppositeCorners() {
     push()
     translate(0, height);
     scale(1, -1);
     background(220);
     Q = [];
     // Lower Left
-    Q.push([randomIntFromInterval(0, width / 2), randomIntFromInterval(0, height / 2)]);
-    // Lower Right
-    Q.push([randomIntFromInterval(width / 2, width), randomIntFromInterval(0, height / 2)]);
+    Q.push([randomIntFromInterval(0, width / 2), randomIntFromInterval(0, height / 2)]);  
     //Upper Right
     Q.push([randomIntFromInterval(width / 2, width / 2), randomIntFromInterval(height / 2, height)]);
-    // Upper Left
-    Q.push([randomIntFromInterval(0, width / 2), randomIntFromInterval(height / 2, height)]);
     for (let i = 0; i < Q.length; i++) {
         console.log("Q[" + i + "]= " + Q[i]);
     }
