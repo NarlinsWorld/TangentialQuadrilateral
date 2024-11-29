@@ -121,22 +121,27 @@ function angleBisector(a, b) {
 }
 
 
-// function unitVec(u) {
-//     let v = [];
-//     let den = Math.sqrt(u[0] * u[0] + u[1] * u[1])
-//     left_term = u[0] / den;
-//     right_term = u[1] / den;
-//     v = [left_term, right_term];
-//     return v;
-// }
 
-function absoluteValue(vect){
-    return Math.sqrt(vect[0]*vect[0]+vect[1]*vect[1]);
+
+function absoluteValue(v){
+    return Math.sqrt(v[0]*v[0]+v[1]*v[1]);
   }
 
   function unitVec(v){
     return [v[0]/absoluteValue(v), v[1]/absoluteValue(v)]
   }
+
+/*
+function to return a point that is just beyond the edge of the screen.
+The returned edgepoint permits the construction of a line that goes from A in the direction of vector v and proceeding offscreen.
+*/
+function AplusdV(A, v) {
+    let u = unitVec(v);
+    let d = Math.sqrt(2) * max(width, height);
+    let edgePoint = [A[0] + d * u[0], A[1] + d * u[1]];
+    return edgePoint;
+  }
+
 
 /*
 Before calling this algorithm, you must already know that the lines presented do in fact intersect !!!!!!!!!
