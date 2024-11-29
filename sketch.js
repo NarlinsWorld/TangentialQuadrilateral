@@ -73,14 +73,4 @@ function setup() {
 }
 
 
-/*
-function to return a point that is just beyond the edge of the screen.
-The returned edgepoint permits the construction of a line that goes from A in the direction of vector v and proceeding offscreen.
-*/
-function AplusdV(A, v) {
-  let u = unitVec(v);
-  let d = Math.sqrt(2) * max(width, height);
-  let edgePoint = [A[0] + d * u[0], A[1] + d * u[1]];
-  return edgePoint;
-}
 
