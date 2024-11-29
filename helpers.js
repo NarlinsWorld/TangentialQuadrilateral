@@ -3,6 +3,19 @@ function randomIntFromInterval(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+
+// function pointMover(){
+//     push();
+//     for(let i=0; i<pts.length; i++){
+//       let x1 = pts[i][0];
+//       let y1 = pts[i][1];
+//       let d = dist(x1, y1, mouseX, height-mouseY);
+//       if(d<10){pts[i]=[mouseX, height-mouseY]};
+//       document.getElementById("overCNV").innerHTML="["+mouseX+", "+(height-mouseY)+"]";
+//     }
+//     pop();
+//   }
+
 function makeTwoOppositeCorners() {
     push()
     translate(0, height);
