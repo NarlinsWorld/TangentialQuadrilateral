@@ -32,6 +32,17 @@ function writeIndexNumber(i) {
     pop();
 }
 
+function writeText(Text,xpos,ypos) {
+    //now write the pt number beside the pt.
+    push();
+    translate(xpos, ypos);
+    rotate(radians(180));
+    scale(-1, 1);
+    text(Text, 0, 0);
+    //text("ROTATE ME", 0,0);
+    pop();
+}
+
 function showPts() {
     push();
     translate(0, height);
