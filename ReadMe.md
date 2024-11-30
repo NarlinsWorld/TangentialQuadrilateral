@@ -13,10 +13,32 @@ To go from there to the proof of Pitot's theorem is merely a matter of labelling
 
 ![alt text](GeneralQuad3.png)
 
-So we want to confirm that side AC + BK = CK + AB. Doing so proves Pitot's theorem.
-Replace AC + BK with its segment names.
-$$AC + BK = b+c+a+d$$
-Do the same with CK + AB.
-$$CK + AB = c+d+b+a$$
-Clearly, the sides 
-$$AC+BK = a+b+c+d = CK + AB \tag*{$\blacksquare$}
+$\mathbf{Pitot's Theorem:}$ When a circle is inscribed inside of a quadrilateral such that it is tangent to all four sides, then the sum of opposite sides is equal.
+
+Proof:
+
+Since a+b+c+d are the sum of the two opposite sides, no matter which two opposite sides we select, then the theorem is proved. 
+$\blacksquare$
+
+$\mathbf{Converse of Pitot:}$ Any quadrilateral whose opposite sides sum to be the same amount, can have a circle tangent to all four sides inscribed within it.
+
+Proof:
+We are given a quadrilateral whose opposite sides sum the same.
+$$AB + CD = BC + AD \tag{eq 1}$$
+!["Four sided figure"](GQ4.png)
+If the figure is a square, then the converse theorem is true since the distance from circle center to midpoint of each side is the same and a circle is incribable.
+
+But suppose $AB\ne CD$ and $BC \ne AD.$ EQ 1 still holds, so
+$$AB-BC = AD - CD \tag{eq 2}$$
+is true by algebra. Further, by switching the segments about, one can always arrange positive values.
+
+Now we will construct two new point, P and Q,
+The point P on segment AB is such that 
+$$BP = BC$$ 
+and similarly Q on segment AD such that 
+$$DQ = CD$$
+![alt text](GQ5.png)
+Connecting these points as shown in the figure creates 3 isosceles trianges whose midpoints, E,F,G together with the circle center bisect angles B, D, and A respectively. Consequently, the circle center is equidistance from segments 
+$$AB, BC, CD, \text{ and }AD.\tag*{$\blacksquare$}$$
+
+
